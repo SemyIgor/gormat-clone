@@ -1,0 +1,97 @@
+@media (min-width: 768px) {
+    .mobile-menu-catalog {
+        display: none !important;
+        pointer-events: none !important;
+    }
+}
+
+.mobile-menu-catalog {
+    --header-height: 120px;
+
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    height: calc(100vh - var(--header-height));
+    z-index: 9999;
+
+    padding-top: 115px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+    width: calc(100vw - 80px);
+    max-width: 240px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease 0s;
+}
+
+.show-mobile-menu-catalog .mobile-menu-catalog {
+    transform: translateX(0);
+}
+
+.mobile-menu-catalog__nav {
+    position: relative;
+    width: 200px;
+}
+
+.mobile-menu-catalog__list {
+    height: 100%;
+}
+
+.mobile-menu-catalog__item {
+    text-align: right;
+}
+
+.mobile-menu-catalog__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.mobile-menu-catalog__item.back {
+    margin-bottom: 40px;
+}
+
+.mobile-menu-catalog__link {
+    color: var(--color-black);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.mobile-menu-catalog__item.forward > .mobile-menu-catalog__link {
+    background: url('../../icons/ui/arrow-chevron-right.svg') no-repeat right center / 5px 10px;
+    padding-right: 13px;
+}
+
+.mobile-menu-catalog__item.back > .mobile-menu-catalog__link {
+    background: url('../../icons/ui/arrow-chevron-left.svg') no-repeat left center / 5px 10px;
+    padding-left: 13px;
+}
+
+.mobile-menu-catalog__sub-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.active + .mobile-menu-catalog__sub-menu {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.mobile-menu-catalog__sub-menu .mobile-menu-catalog__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.mobile-menu-catalog__sub-menu .mobile-menu-catalog__item:not(.back) .mobile-menu-catalog__link {
+    font-size: 12px;
+    font-weight: 500;
+}

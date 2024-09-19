@@ -129,10 +129,9 @@ export const building = () => {
   ).pipe(dest("dist"));
 };
 
-// Функция копирования папки images из папки src в dist
+// Функция копирования папки image из папки src в dist
 export const buildImg = () => {
-  // replaceSVGImages();
-  return src(["src/images/**/*.*"], { base: "src", encoding: false }).pipe(
+  return src(["src/image/**/*.*"], { base: "src", encoding: false }).pipe(
     dest("dist")
   );
 };

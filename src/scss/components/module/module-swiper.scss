@@ -1,0 +1,32 @@
+.module-swiper {
+    margin-bottom: var(--margin-60);
+}
+
+.module-swiper__container {}
+
+.module-swiper__heading {
+    margin-bottom: calc(var(--margin-60) / 2);
+    color: var(--color-black);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.module-swiper__content {}
+
+/* responsive */
+@media (max-width: 1199px) {
+    .module-swiper__heading {
+        font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1199 - 320)));
+    }
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {}
+/* responsive */

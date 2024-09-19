@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap');
+
+:root {
+    --color-gray-bg: #B6B8BC;
+    --color-gray-menu: #CFD1D5;
+    --color-gray-text: #929292;
+
+    --color-black: #2A2A2A;
+    --color-red: #E31235;
+    --color-white: #fff;
+
+    --color-black-footer: #1E1D21;
+
+    --margin-60: 60px;
+
+    --color-green: #45AC34;
+}
+
+/* responsive */
+@media (max-width: 1199px) {
+    :root {
+        --margin-60: calc(30px + (60 - 30) * ((100vw - 320px) / (1199 - 320)));
+    }
+}
+/* responsive */
+
+
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* header main footer */
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* header {} */
+
+main {
+    flex: 1 1 auto;
+}
+
+footer {
+    display: none;
+}
+
+/* header main footer */
+
+[class*="container"] {
+    width: 100%;
+    max-width: 1170px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    background: none;
+}
+
+input {
+    border: 0;
+    outline: none;
+    color: var(--color-black);
+    font-weight: 400;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: var(--color-gray-text);
+}
+
+textarea:focus::placeholder,
+input:focus::placeholder {
+    color: transparent;
+    transition: color 0.3s ease;
+}
+
+:where(a[class]) {
+    text-decoration: none;
+}
+
+.d-flex-row-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.d-flex-column-center {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+
+.opacity-hover {
+    transition: opacity 0.3s ease 0s;
+}
+
+.opacity-hover:hover {
+    opacity: 0.75;
+}
+
+.black-hover {
+    color: var(--color-black);
+    transition: color 0.3s ease 0s;
+}
+
+.black-hover:hover {
+    color: var(--color-red);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* social */
+.social-list {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 15px;
+}
+
+/* .social-list__item {} */
+
+.social-list__link {
+    display: block;
+    height: 36px;
+    width: 36px;
+}
+
+/* .social-list__link:hover {} */
+
+/* .social-list__icon {} */
+
+/* .social-list__item_telegram {} */
+
+/* .social-list__item_viber {} */
+
+/* .social-list__item_instagram {} */
+/* social */

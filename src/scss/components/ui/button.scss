@@ -1,0 +1,30 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    height: 40px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.btn_full {
+    width: 100%;
+}
+
+.btn_green {
+    color: #fff;
+    background: var(--color-green);
+
+    transition: background 0.3s ease 0s;
+}
+
+.btn_green:hover {
+    background: var(--color-red);
+}

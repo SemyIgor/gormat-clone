@@ -1,0 +1,34 @@
+.products-swiper {
+    position: relative;
+    z-index: 2;
+}
+
+.products-swiper__container {}
+
+.products-swiper__heading {}
+
+.products-swiper__content {}
+
+.products-swiper__swiper {
+    overflow: visible !important;
+}
+
+.products-swiper__swiper-wrapper {}
+
+.products-swiper__swiper-slide {}
+
+/* responsive */
+
+@media (max-width: 1539px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {}
+
+/* responsive */

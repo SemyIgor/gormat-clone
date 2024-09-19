@@ -1,0 +1,102 @@
+.product-blue-swiper {}
+
+.product-blue-swiper__container {}
+
+.product-blue-swiper__content {}
+
+.product-blue-swiper__carousel {
+    overflow: visible !important;
+}
+
+.product-blue__item {}
+
+.product-blue__link {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #CCEAFD;
+}
+
+.pproduct-blue__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-blue__description {
+    --padding: 20px;
+
+    color: #fff;
+    font-weight: 400;
+    line-height: 1;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.40);
+    padding: 10px var(--padding) var(--padding) var(--padding);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-blue__name {
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.product-blue__price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+    line-height: 1;
+}
+
+.product-blue__price-current {
+    font-size: 24px;
+}
+
+.product-blue__price-old {
+    color: var(--color-gray-bg);
+    font-size: 18px;
+    text-decoration: line-through;
+}
+
+/* responsive */
+@media (max-width: 1199px) {
+    .product-blue__name {
+        font-size: calc(10px + (20 - 10) * ((100vw - 320px) / (1199 - 320)));
+    }
+
+    .product-blue__price-current {
+        font-size: calc(13px + (24 - 13) * ((100vw - 320px) / (1199 - 320)));
+    }
+
+    .product-blue__price-old {
+        font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1199 - 320)));
+    }
+
+    .product-blue__description {
+        --padding: calc(10px + (20 - 10) * ((100vw - 320px) / (1199 - 320)));
+
+        gap: calc(5px + (15 - 5) * ((100vw - 320px) / (1199 - 320)));
+    }
+
+    .product-blue__price {
+        gap: calc(5px + (20 - 5) * ((100vw - 320px) / (1199 - 320)));
+    }
+}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 320px) {}
+
+/* responsive */
