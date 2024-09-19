@@ -64,7 +64,7 @@ export const styles = () => {
 
 // Обрабатываем JS файлы (просто подключаем к серверу)
 export const scripts = () => {
-  return src("src/js/*.js").pipe(browserSync.stream());
+  return src("src/js/**/*.js").pipe(browserSync.stream());
 };
 
 // ВНИМАНИЕ ! Данная функция html, по окончании своей работы,
@@ -119,11 +119,13 @@ export const building = () => {
   return src(
     [
       "src/css/*.css",
-      "src/js/*.js",
+      "src/js/**/*.js",
       // 'src/js/main.min.js',
       "src/*.html",
       // 'src/index.html',
       "src/fonts/*.*",
+      "src/files/*.*",
+      "src/lib/**/*.*",
     ],
     { base: "src" }
   ).pipe(dest("dist"));
