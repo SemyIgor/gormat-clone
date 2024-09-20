@@ -133,7 +133,7 @@ export const building = () => {
 
 // Функция копирования папки image из папки src в dist
 export const buildImg = () => {
-  return src(["src/image/**/*.*"], { base: "src", encoding: false }).pipe(
+  return src(["src/image/**/*.*","src/icons/**/*.*"], { base: "src", encoding: false }).pipe(
     dest("dist")
   );
 };
