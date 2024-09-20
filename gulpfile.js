@@ -49,6 +49,7 @@ export const styles = () => {
   return (
     src("src/**/*.scss")
       .pipe(concat("style.css"))
+      .pipe(replace("../../", "../"))
       .pipe(
         autoprefixer({
           overrideBrowserslist: ["last 10 versions"],
