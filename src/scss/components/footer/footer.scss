@@ -5,7 +5,7 @@
     display: block;
 }
 
-.footer__container {}
+/* .footer__container {} */
 
 .footer__contacts {
     margin-bottom: 50px;
@@ -22,7 +22,7 @@
     display: inline-block;
 }
 
-.footer__logo-img {}
+/* .footer__logo-img {} */
 
 .footer__phones {
     display: flex;
@@ -32,12 +32,13 @@
 
 .footer__phone-link {
     color: #fff;
-    background: url(../../icons/contact/phone_blue.svg) no-repeat left center;
+    /* background: url(../../icons/contact/phone_blue.svg) no-repeat left center; */
+    background: url(../../icons/contact/phone_white.svg) no-repeat left center;
     padding-left: 20px;
     font-size: 18px;
 }
 
-.footer__social {}
+/* .footer__social {} */
 
 
 .footer__menu {

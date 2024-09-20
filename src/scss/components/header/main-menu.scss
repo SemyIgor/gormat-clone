@@ -1,11 +1,12 @@
-.header__main-menu {}
+/* .header__main-menu {} */
 
 .main-menu {
-    background: #fff;
+    /* background: #fff; */
+    background: var(--color-black-header-bg);
     line-height: 1;
 }
 
-.main-menu__container {}
+/* .main-menu__container {} */
 
 .main-menu__nav {
     position: relative;
@@ -22,14 +23,15 @@
     gap: var(--gap);
 }
 
-.main-menu__item {}
+/* .main-menu__item {} */
 
 .main-menu__link {
     /* --padding: 15px 10px; */
     --padding: calc(var(--margin-60) / 4) calc(var(--margin-60) / 6);
 
     display: block;
-    color: var(--color-black);
+    /* color: var(--color-black); */
+    color: var(--color-white);
     font-size: 14px;
     font-weight: 700;
     line-height: 120%;
