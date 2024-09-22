@@ -1,3 +1,52 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name=”keywords” contents=”html, course, css, tags” >
+    <meta name=”description” content=”Это базовый курс по HTML” >
+
+    <title>Gormat Tennis</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize-block-model.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" /> -->
+    
+    <link href="lib/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+    <link href="lib/fancybox/dist/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="lib/select-box/jquery.selectBox.css" rel="stylesheet" type="text/css">
+    <!-- end css -->
+    
+    <!-- js -->
+    <script src="lib/jquery/jquery-2.1.1.min.js"></script>
+    <script async src="lib/swiper/swiper-bundle.min.js" type="text/javascript"></script>
+    <script async src="lib/fancybox/dist/jquery.fancybox.min.js" type="text/javascript"></script>
+    <script async src="lib/select-box/jquery.selectBox.js" type="text/javascript"></script>
+
+    <script defer src="js/modules/main-menu.js" type="text/javascript"></script>
+    <script defer src="js/modules/main-mobile-menu.js" type="text/javascript"></script>
+    <script defer src="js/modules/mobile-menu-catalog.js" type="text/javascript"></script>
+    <script defer src="js/modules/account-list-menu.js" type="text/javascript"></script>
+    <script defer src="js/modules/img-svg.js" type="text/javascript"></script>
+    <script defer src="js/modules/categories-swiper.js" type="text/javascript"></script>
+    <script defer src="js/modules/products-swiper.js" type="text/javascript"></script>
+    <script defer src="js/modules/product-item-images-swiper.js" type="text/javascript"></script>
+    <script defer src="js/modules/products-blue-swiper.js" type="text/javascript"></script>
+    <script defer src="js/modules/backdrop.js" type="text/javascript"></script>
+
+    <script defer src="js/main.js"></script>
+    <!-- end js -->
+</head>
+
+<body>
+   <!-- wrapper -->
+   <div class="wrapper">
+
         <!-- header -->
         <header class="header">
          <div class="header__top">
@@ -63,7 +112,7 @@
                      <div class="header__account">
                          <ul class="account-list d-flex-row-center">
                              <li class="account-list__item account-list__item_wishlist">
-                                 <a href="../../favorites.html" class="account-list__link">
+                                 <a href="favorites.html" class="account-list__link">
                                      <span class="account-list__count">7</span>
                                      <img src="icons/account/heart.svg" alt="Избранное"
                                          class="account-list__icon _svg">
@@ -92,7 +141,7 @@
                              </li>
 
                              <li class="account-list__item account-list__item_cart">
-                                 <a href="../../cart_person.html" class="account-list__link">
+                                 <a href="cart_person.html" class="account-list__link">
                                      <span class="account-list__count">3</span>
                                      <img src="icons/account/shopping-cart-empty.svg" alt="Корзина"
                                          class="account-list__icon _svg">
@@ -361,3 +410,205 @@
          </div>
      </header>
      <!-- header -->
+
+<h1 style="padding: 50px 0; text-align: center;">payment</h1>
+
+        <!-- footer -->
+        <footer class="footer">
+         <div class="footer__container">
+             <div class="footer__contacts">
+                 <div class="footer__logo">
+                     <a href="#" class="footer__logo-link opacity-hover">
+                         <img src="image/logo/logo_footer.svg" alt="Gormat-Tennis.by" class="footer__logo-img">
+                     </a>
+                 </div>
+
+                 <div class="footer__phones">
+                     <a href="tel:+375297858497" class="footer__phone-link phone-link opacity-hover">+375 (29) 785 84
+                         97</a>
+                     <a href="tel:+48518528903" class="footer__phone-link phone-link opacity-hover">+48 518 528
+                         903</a>
+                 </div>
+
+                 <div class="footer__social">
+                     <ul class="social-list">
+                         <li class="social-list__item social-list__item_telegram opacity-hover">
+                             <a href="#" class="social-list__link">
+                                 <img src="icons/social/telegram.svg" alt="Telegram" class="social-list__icon">
+                             </a>
+                         </li>
+
+                         <li class="social-list__item social-list__item_viber">
+                             <a href="#" class="social-list__link opacity-hover">
+                                 <img src="icons/social/viber.svg" alt="Viber" class="social-list__icon">
+                             </a>
+                         </li>
+
+                         <li class="social-list__item social-list__item_instagram">
+                             <a href="#" class="social-list__link opacity-hover">
+                                 <img src="icons/social/instagram.svg" alt="Instagram" class="social-list__icon">
+                             </a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+
+             <div class="footer__menu">
+                 <nav class="footer__nav">
+                     <!-- col 1 -->
+                     <ul class="footer__list">
+                         <li class="footer__item">
+                             <a href="#" class="footer__link footer__link_heading opacity-hover">Ракетки</a>
+                         </li>
+
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Для взрослых</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Для юниоров</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Б/У</a>
+                         </li>
+                     </ul>
+                     <!-- col 1 -->
+
+                     <!-- col 2 -->
+                     <ul class="footer__list">
+                         <li class="footer__item">
+                             <a href="#" class="footer__link footer__link_heading opacity-hover">Одежда</a>
+                         </li>
+
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Мужская</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Женская</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Для юниоров</a>
+                         </li>
+                     </ul>
+                     <!-- col 2 -->
+
+                     <!-- col 3 -->
+                     <ul class="footer__list">
+                         <li class="footer__item">
+                             <a href="#" class="footer__link footer__link_heading opacity-hover">Мячи</a>
+                         </li>
+
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Теннисные мячи</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Мячи в коробках</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Юниорские мячи</a>
+                         </li>
+                     </ul>
+                     <!-- col 3 -->
+
+                     <!-- col 4 -->
+                     <ul class="footer__list">
+                         <li class="footer__item">
+                             <a href="#" class="footer__link footer__link_heading opacity-hover">Аксессуары</a>
+                         </li>
+
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Теннисные мячи</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Мячи в коробках</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Юниорские мячи</a>
+                         </li>
+                     </ul>
+                     <!-- col 4 -->
+
+                     <!-- col 5 -->
+                     <ul class="footer__list">
+                         <li class="footer__item">
+                             <a href="#" class="footer__link footer__link_heading opacity-hover">Обувь</a>
+                         </li>
+
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Мужская</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Женская</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Для юниоров</a>
+                         </li>
+                     </ul>
+                     <!-- col 5 -->
+
+                     <!-- col 6 -->
+                     <ul class="footer__list">
+                         <li class="footer__item">
+                             <a href="#" class="footer__link footer__link_heading opacity-hover">Сумки</a>
+                         </li>
+
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Теннисные сумки</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Рюкзаки</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Чехлы</a>
+                         </li>
+                     </ul>
+                     <!-- col 6 -->
+
+                     <!-- col 7 -->
+                     <ul class="footer__list">
+                         <li class="footer__item">
+                             <a href="#" class="footer__link footer__link_heading opacity-hover">Струны</a>
+                         </li>
+
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Теннисные мячи</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Мячи в коробках</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Юниорские мячи</a>
+                         </li>
+                     </ul>
+                     <!-- col 7 -->
+
+                     <!-- col 8 -->
+                     <ul class="footer__list">
+                         <li class="footer__item">
+                             <a href="#" class="footer__link footer__link_heading opacity-hover">Для тренинга</a>
+                         </li>
+
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Теннисные мячи</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Мячи в коробках</a>
+                         </li>
+                         <li class="footer__item">
+                             <a href="#" class="footer__link opacity-hover">Юниорские мячи</a>
+                         </li>
+                     </ul>
+                     <!-- col 8 -->
+                 </nav>
+             </div>
+
+             <div class="footer__copyright">© 2023 Gormat-tennis.by - платформа по доставке товаров со всего мира
+             </div>
+         </div>
+     </footer>
+     <!-- footer -->
+
+   </div>
+   <!-- end wrapper -->
+</body>
+
+</html>
