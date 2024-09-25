@@ -76,6 +76,7 @@ export const html = () => {
   return src(["src/html_pages/*.html"])
     .pipe(include({ prefix: "@@" }))
     .pipe(replace("../../", ""))
+    .pipe(replace("../", ""))
     .pipe(dest(["src"]))
     .pipe(browserSync.stream());
 };
