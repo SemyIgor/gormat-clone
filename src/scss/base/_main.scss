@@ -10,16 +10,17 @@
     --color-white: #fff;
 
     --color-black-header-bg: #1E1D21;
+    --color-black-footer: #1E1D21;
     --color-black-header-border: #333333;
 
-    --color-black-footer: #1E1D21;
-
-    --margin-60: 60px;
-
+    
     --color-green: #45AC34;
-
+    
     --color-black-header-top: #28272B;
     
+    --margin-60: 60px;
+    --margin-40: 40px;
+
 }
 
 /* responsive */
@@ -63,7 +64,8 @@ footer {
 
 [class*="container"] {
     width: 100%;
-    max-width: 1170px;
+    /* max-width: 1170px; */
+    max-width: 1200px;
     min-width: 320px;
     margin: 0 auto;
     padding: 0 15px;

@@ -1,0 +1,20 @@
+
+.category-pagination {
+   display: flex;
+   /* gap: 25px; */
+   gap: 3px;
+   margin: 0 auto;
+}
+
+.category-pagination li.active {
+   background-color: #E6E6E7;
+   border: 1px solid #000000;
+   border-radius: 6px;
+   
+}
+
+.category-pagination a {
+   font-size: 20px;
+   color: #1E1D21;
+   padding: 3px 11px;
+}
