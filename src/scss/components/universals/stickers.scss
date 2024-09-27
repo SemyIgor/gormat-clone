@@ -1,0 +1,59 @@
+.product-item__stickers {
+   position: absolute;
+   left: 0;
+   top: 35px;
+   z-index: 2;
+
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.product-item__sticker {
+   --border-radius: 6px;
+
+   color: #fff;
+
+   font-size: 12px;
+   font-style: italic;
+   font-weight: 900;
+   line-height: 1;    
+   border-radius: 0px var(--border-radius) var(--border-radius) 0px;
+
+   padding-bottom: 5px;
+
+   height: 20px;
+   width: 90px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.product-item__sticker_discount {
+   background: linear-gradient(180deg, #FF1C3D 0%, #D41128 100%);
+}
+
+.product-item__sticker_new {
+   background: linear-gradient(180deg, #36B32D 0%, #279324 100%);
+}
+
+.product-item__sticker_sale {
+   background: linear-gradient(180deg, #4A7EF2 0%, #3561E8 100%);
+}
+
+@media(max-width:1199px){
+   .product-item__stickers {
+      top: calc(30px + (35 - 30) * ((100vw - 320px) / (1199 - 320)));
+      gap: calc(2px + (5 - 2) * ((100vw - 320px) / (1199 - 320)));
+   }
+   
+   .product-item__sticker {
+      --border-radius: calc(3px + (6 - 3) * ((100vw - 320px) / (1199 - 320)));
+   
+      font-size: calc(6px + (12 - 6) * ((100vw - 320px) / (1199 - 320)));   
+      padding-bottom: calc(2px + (5 - 2) * ((100vw - 320px) / (1199 - 320)));
+   
+      height: calc(12px + (20 - 12) * ((100vw - 320px) / (1199 - 320)));
+      width: calc(45px + (90 - 45) * ((100vw - 320px) / (1199 - 320)));
+   }    
+}
