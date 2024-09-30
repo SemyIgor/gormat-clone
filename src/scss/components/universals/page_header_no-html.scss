@@ -1,0 +1,14 @@
+.page-header {
+   color: var(--color-black);
+   font-size: 48px;
+   font-weight: 400;
+   line-height: normal;
+   text-transform: uppercase;
+}
+
+/* responsive */
+@media (max-width: 1199px) {
+   .page-header {
+       font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1199 - 320)));
+   }
+}
