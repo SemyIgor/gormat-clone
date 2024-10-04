@@ -182,40 +182,77 @@
 .products-swiper__swiper-slide.category-swiper__swiper-slide {
    display: flex;
    justify-content: center;
-   max-width: 270px;
+   width: 100%;
+   /* height: fit-content; */
 }
 
 .product-item {
-   &__content {
-      /* flex-grow: 2; */
-   /*    display: flex;
-      flex-direction: column;
-      justify-content: space-between; */
+   &_options {
+      padding-left: 15px;
+      padding-right: 15px;
+      gap: 10px;
+      width: 100%;
+   }
+
+   &__main-info {
+      width: 100%;
    }
    
-   &__description {
-      justify-self: end;
+   &__description-info {
+      flex-grow: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
    }
 
    &__images {
-      flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+      &-item {
+         width: 220px !important;
+      }
+
+      /* aspect-ratio: 238 / 234; */
+      &-swiper-pagination {
+         height: 16px;
+      }
+   }
+
+   /* If we have one image only, then imitate pagination */
+   &__images:not(:has(.product-item__images-item:nth-of-type(2))) {
+      margin-bottom: 16px;
    }
    
    &__images-no {
       border: 1px solid #e7e7e7;
       width: 220px;
       height: 242px;
-      display: flex;
+      margin: 0 auto;
+      /* display: flex; */
+      display: none;
       justify-content: center;
       align-items: center;
       padding: 20px;
       margin-top: 20px;
       font-size: 32px;
+      background-color: cyan;
    }
 
+   /* If we have no any image, then show message "No Image" */
+      /*    .product-item__images:not(:has(.    product-item__images-item)) {
+         margin-bottom: 21px;
+      } */
+
+   &__brand {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      /* margin-bottom: 15px; */
+   }
 }
-
-
 
 .category-bottom-pagination {
    margin-bottom: calc(var(--margin-60));
@@ -293,18 +330,31 @@
             color: #929292;
          }
       }
-
    }
 
    .product-item {
+      &_options {
+         padding-left: calc(10px + (15 - 10) * ((100vw - 320px) / (1200 - 320)));
+         padding-right: calc(10px + (15 - 10) * ((100vw - 320px) / (1200 - 320)));
+         gap: calc(8px + (10 - 8) * ((100vw - 320px) / (1200 - 320)));
+      }
+
       &__wishlist-button {
          width: calc(16px + (18 - 16) * ((100vw - 320px) / (1200 - 320)));
          height: calc(15px + (17 - 15) * ((100vw - 320px) / (1200 - 320)));
       }
 
+      /* If we have one image only, then imitate pagination */
+      &__images:not(:has(.product-item__images-item:nth-of-type(2))) {
+         margin-bottom: calc(11px + (16 - 11)*(100vw - 320px) / (1200 - 320));
+      }
+
       &__images-link img {
          width: calc(100px + (220 - 100) * ((100vw - 320px) / (1200 - 320)));
-         height: calc(100px + (220 - 100) * ((100vw - 320px) / (1200 - 320)));
+      }
+
+      &__images-swiper-pagination {
+         height: calc(11px + (16 - 11)*(100vw - 320px) / (1200 - 320));
       }
 
       &__images-no {
@@ -312,7 +362,7 @@
          width: calc(100px + (220 - 100)*(100vw - 320px) / (1200 - 320));
          height: calc(123px + (242 - 123)*(100vw - 320px) / (1200 - 320));
          border-radius: calc(4px + (10 - 4)*(100vw - 320px) / (1200 - 320));
-}
+      }
 
       &__brand-img {
          width: calc(25px + (50 - 25) * ((100vw - 320px) / (1200 - 320)));
@@ -324,12 +374,6 @@
 
       &__name {
          font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1200 - 320)));
-      }
-
-      &_options {
-         width: calc(134px + (270 - 134) * ((100vw - 320px) / (1200 - 320)));
-         height: calc(300px + (500 - 300) * ((100vw - 320px) / (1200 - 320)));
-
       }
    }
 

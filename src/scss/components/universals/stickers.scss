@@ -21,6 +21,7 @@
    border-radius: 0px var(--border-radius) var(--border-radius) 0px;
 
    padding-bottom: 5px;
+   padding-top: 3px;
 
    height: 20px;
    width: 90px;
@@ -41,6 +42,14 @@
    background: linear-gradient(180deg, #4A7EF2 0%, #3561E8 100%);
 }
 
+[class*="product-item__sticker_"] {
+   display: none;
+}
+
+.stickers-active {
+   display: block;
+}
+
 @media(max-width:1199px){
    .product-item__stickers {
       top: calc(30px + (35 - 30) * ((100vw - 320px) / (1199 - 320)));
@@ -52,6 +61,7 @@
    
       font-size: calc(6px + (12 - 6) * ((100vw - 320px) / (1199 - 320)));   
       padding-bottom: calc(2px + (5 - 2) * ((100vw - 320px) / (1199 - 320)));
+      padding-top: calc(2px + (3 - 2) * ((100vw - 320px) / (1199 - 320)));
    
       height: calc(12px + (20 - 12) * ((100vw - 320px) / (1199 - 320)));
       width: calc(45px + (90 - 45) * ((100vw - 320px) / (1199 - 320)));
