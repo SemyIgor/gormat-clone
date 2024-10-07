@@ -28,19 +28,22 @@
 .product-images {
    max-width: 470px;
    margin-top: 25px;
-}
-.product {
-
-   &__img {
-   }
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 .product-slider {
    &__module {
       display: flex;
-      justify-content: space-between;
+      justify-content: start;
       align-items: center;
+      overflow: hidden;
       margin-top: 25px;
+      gap: 20px;
+      max-width: 345px;
+   }
 
+   &__wrapper {
    }
 
    &__arrow-left {
@@ -53,6 +56,7 @@
    }
 
    &__slide {
+      width: fit-content;
       & img {
          width: 70px;
       }
