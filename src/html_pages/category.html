@@ -1,6 +1,12 @@
 @@include('html_parts/universals/head.html')
 @@include('html_parts/universals/header.html')
 
+<!-- mobile -->
+@@include('html_parts/universals/mobile_main_menu.html')
+@@include('html_parts/universals/mobile_menu_catalog.html')
+@@include('html_parts/universals/bachdrop_wall.html')
+<!-- /mobile -->
+
 <div class="page-header__wrapper">
     <h1 class="page-header page-header__container">Одежда</h1>
 </div>
@@ -17,16 +23,8 @@
             <span class="category__quantity-legend">Показать вариантов:</span>
             <div class="category__quantity-content">
                 <div class="category__dropdown-arrows">
-                    <img
-                        src="../image/category/drop_down_arrow.svg"
-                        alt=""
-                        class="category__dropdown-arrow"
-                    />
-                    <img
-                        src="../image/category/drop_up_arrow.svg"
-                        alt=""
-                        class="category__dropup-arrow"
-                    />
+                    <img src="../image/category/drop_down_arrow.svg" alt="" class="category__dropdown-arrow" />
+                    <img src="../image/category/drop_up_arrow.svg" alt="" class="category__dropup-arrow" />
                 </div>
                 <a href="#">28</a>
                 <a href="#">40</a>
@@ -41,16 +39,8 @@
             <span class="category__sorting-legend">Сортировка:</span>
             <div class="category__sorting-content">
                 <div class="category__dropdown-arrows">
-                    <img
-                        src="../image/category/drop_down_arrow.svg"
-                        alt=""
-                        class="category__dropdown-arrow"
-                    />
-                    <img
-                        src="../image/category/drop_up_arrow.svg"
-                        alt=""
-                        class="category__dropup-arrow"
-                    />
+                    <img src="../image/category/drop_down_arrow.svg" alt="" class="category__dropdown-arrow" />
+                    <img src="../image/category/drop_up_arrow.svg" alt="" class="category__dropup-arrow" />
                 </div>
                 <a href="#">По умолчанию</a>
                 <a href="#">Цена (возрастание)</a>
@@ -65,28 +55,18 @@
 <section class="category-cards">
     <div class="category-cards__container">
         <div class="category-cards__wraper">
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -95,106 +75,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-02.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-02.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -204,10 +136,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка
                             </a>
                         </div>
@@ -234,29 +163,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -265,106 +183,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-02.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-02.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -374,10 +244,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 <!-- Wilson Clash 100 PRO V2.0 + натяжка + сервис -->
                             </a>
                         </div>
@@ -392,29 +259,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -423,22 +279,13 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper">
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
                                             class="product-item__images-item product-item__images-swiper-slide swiper-slide">
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
@@ -481,24 +328,15 @@
                       </div> -->
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -508,10 +346,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -544,35 +379,24 @@
                                 <div class="product-item__size-list-item">8</div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -581,12 +405,8 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <!-- <div
                                             class="product-item__images-item product-item__images-swiper-slide swiper-slide">
                                             <a href="#" class="product-item__images-link opacity-hover">
@@ -628,9 +448,7 @@
                                         </div> -->
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                                 <div class="product-item__images-no">
                                     No Images
@@ -640,15 +458,8 @@
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -658,10 +469,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -682,29 +490,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -713,23 +510,13 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
                                             class="product-item__images-item product-item__images-swiper-slide swiper-slide">
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
@@ -794,24 +581,15 @@
                                         </div> -->
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -821,53 +599,39 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
 
                         <div class="product-item__price">
-                          <div class="product-item__price-old">
-                            23 990,00р.
-                        </div>
-                        <div class="product-item__price-current">
-                            21 745,00р.
-                        </div>
-                        <div class="product-item__price-sale-percent">
-                            Скидка 10%
-                        </div>
+                            <div class="product-item__price-old">
+                                23 990,00р.
+                            </div>
+                            <div class="product-item__price-current">
+                                21 745,00р.
+                            </div>
+                            <div class="product-item__price-sale-percent">
+                                Скидка 10%
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -876,106 +640,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-02.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-02.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -985,10 +701,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -1003,29 +716,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -1034,106 +736,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-02.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-02.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -1143,10 +797,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -1161,29 +812,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -1192,106 +832,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-02.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-02.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -1301,10 +893,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -1319,29 +908,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -1350,106 +928,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-02.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-02.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -1459,10 +989,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -1477,29 +1004,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -1508,106 +1024,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-02.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-02.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -1617,10 +1085,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -1635,29 +1100,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -1666,106 +1120,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -1775,10 +1181,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -1793,29 +1196,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -1824,106 +1216,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-02.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-02.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -1933,10 +1277,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -1951,29 +1292,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -1982,106 +1312,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-02.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-02.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -2091,10 +1373,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -2109,29 +1388,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -2140,106 +1408,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-02.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-02.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -2249,10 +1469,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -2267,29 +1484,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -2298,106 +1504,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -2407,10 +1565,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -2425,29 +1580,18 @@
                 <!-- Slide Item -->
             </div>
 
-            <div
-                class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide"
-            >
+            <div class="products-swiper__swiper-slide category-swiper__swiper-slide swiper-slide">
                 <div class="product-item product-item_options">
-                    <button
-                        class="product-item__wishlist-button"
-                        onclick="this.classList.toggle('active')"
-                    ></button>
+                    <button class="product-item__wishlist-button" onclick="this.classList.toggle('active')"></button>
 
                     <div class="product-item__stickers">
-                        <div
-                            class="product-item__sticker product-item__sticker_discount"
-                        >
+                        <div class="product-item__sticker product-item__sticker_discount">
                             Скидка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_new"
-                        >
+                        <div class="product-item__sticker product-item__sticker_new">
                             Новинка
                         </div>
-                        <div
-                            class="product-item__sticker product-item__sticker_sale"
-                        >
+                        <div class="product-item__sticker product-item__sticker_sale">
                             Распродажа
                         </div>
                     </div>
@@ -2456,106 +1600,58 @@
                         <!-- images -->
                         <div class="product-item__images">
                             <div class="product-item__images-slider-wrapper">
-                                <div
-                                    class="product-item__images-slider product-item__images-swiper swiper"
-                                >
-                                    <div
-                                        class="product-item__images-swiper-wrapper swiper-wrapper"
-                                    >
+                                <div class="product-item__images-slider product-item__images-swiper swiper">
+                                    <div class="product-item__images-swiper-wrapper swiper-wrapper">
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-02.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-02.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-03.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-03.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-01.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-01.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
 
                                         <div
-                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide"
-                                        >
-                                            <a
-                                                href="#"
-                                                class="product-item__images-link opacity-hover"
-                                            >
-                                                <img
-                                                    src="image/product/product-06.jpg"
-                                                    alt=""
-                                                    class="product-item__images-img"
-                                                />
+                                            class="product-item__images-item product-item__images-swiper-slide swiper-slide">
+                                            <a href="#" class="product-item__images-link opacity-hover">
+                                                <img src="image/product/product-06.jpg" alt=""
+                                                    class="product-item__images-img" />
                                             </a>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="product-item__images-swiper-pagination swiper-pagination"
-                                    ></div>
+                                    <div class="product-item__images-swiper-pagination swiper-pagination"></div>
                                 </div>
                             </div>
                         </div>
                         <!-- images -->
 
                         <div class="product-item__brand">
-                            <a
-                                href="#"
-                                class="product-item__brand-link opacity-hover"
-                            >
-                                <img
-                                    src="image/brand/wilson.jpg"
-                                    alt=""
-                                    class="product-item__brand-img"
-                                />
+                            <a href="#" class="product-item__brand-link opacity-hover">
+                                <img src="image/brand/wilson.jpg" alt="" class="product-item__brand-img" />
                             </a>
                         </div>
                         <div class="product-item__category">
@@ -2565,10 +1661,7 @@
 
                     <div class="product-item__description-info">
                         <div class="product-item__name">
-                            <a
-                                href="#"
-                                class="product-item__name-link opacity-hover"
-                            >
+                            <a href="#" class="product-item__name-link opacity-hover">
                                 Wilson Clash 100 PRO V2.0 + натяжка + сервис
                             </a>
                         </div>
@@ -2593,7 +1686,7 @@
 </section>
 
 <section class="category-info">
-    <div class="category-info__container category__text">
+    <div class="category-info__container text">
         <h2>Как выбрать правильную одежду для игры в теннис?</h2>
         <p>
             При выборе одежды для игры в теннис необходимо учитывать ее
