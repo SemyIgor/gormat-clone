@@ -15,11 +15,11 @@
     --color-black-footer: #1E1D21;
     --color-black-header-border: #333333;
 
-    
+
     --color-green: #45AC34;
-    
+
     --color-black-header-top: #28272B;
-    
+
     --margin-60: 60px;
     --margin-40: 40px;
 
@@ -31,6 +31,7 @@
         --margin-60: calc(30px + (60 - 30) * ((100vw - 320px) / (1199 - 320)));
     }
 }
+
 /* responsive */
 
 
@@ -154,6 +155,12 @@ input:focus::placeholder {
     display: block;
     height: 36px;
     width: 36px;
+}
+
+@media(max-width: 768px) {
+    [class*="container"] {
+        padding: 0 20px;
+    }
 }
 
 /* .social-list__link:hover {} */

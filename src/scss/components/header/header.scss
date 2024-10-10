@@ -43,7 +43,10 @@
 
 .header__flag__img {}
 
-.header__logo {}
+.header__logo {
+    /*     width: 53px;
+    height: 76px; */
+}
 
 .logo-header {}
 
@@ -271,6 +274,11 @@
     .header__col_1 .header__flag {
         display: none;
     }
+
+    /*     .header__logo {
+        width: 35px;
+        height: 50px;
+    } */
 
     .logo-header__img {
         min-width: 50px;

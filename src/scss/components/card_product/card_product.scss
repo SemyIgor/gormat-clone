@@ -19,8 +19,6 @@
    display: flex;
    gap: 150px;
    margin-bottom: 60px;
-
-   &__title {}
 }
 
 .product-images {
@@ -67,10 +65,6 @@
          width: 70px;
          /* width: 100%; */
       }
-   }
-
-   &__arrow-right {
-      /* cursor: pointer; */
    }
 }
 
@@ -266,6 +260,7 @@
    flex-direction: row;
    margin-bottom: -2px;
    padding-left: 40px;
+   gap: 10px;
 }
 
 .product-description__header {
