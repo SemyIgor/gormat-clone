@@ -1,16 +1,17 @@
 /* Центрирование отдельной секции страницы */
 .center {
-   padding-left: calc(50% - 60.0rem);
-   padding-right: calc(50% - 60.0rem);
+   /*    padding-left: calc(50% - 60.0rem);
+   padding-right: calc(50% - 60.0rem); */
+   margin: 0 auto;
 }
 
 /* Общий стиль для контейнера секции страницы */
-.container {
+/* .container {
    display: flex;
    max-width: 120.0rem;
    padding-left: 20px;
    padding-right: 20px;
-}
+} */
 
 /* Стрелка слайдера вправо */
 /* и Стрелка слайдера влево */

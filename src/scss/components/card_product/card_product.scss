@@ -177,6 +177,7 @@
    color: #ff0000;
 }
 
+
 .product-buttons {
    display: flex;
    align-items: center;
@@ -200,10 +201,10 @@
       border: 1px solid #e6e6e7;
       border-radius: 2px;
       padding-left: 3px;
-   }
 
-   &--minus {
-      background-color: #E6E6E7;
+      &:hover {
+         background-color: #E6E6E7;
+      }
    }
 }
 

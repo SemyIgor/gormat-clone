@@ -11,20 +11,62 @@
     <h1 class="page-header page-header__container">Одежда</h1>
 </div>
 
-<section class="category-filters">
-    <div class="category-filters__container">
+<section class="filters">
+    <div class="filters__container">
         <!-- FILTERS -->
+        <div class="filters__wrapper">
+            <div class="filters-new__module">
+                @@include('html_parts/category/filter_grid_row.html')
+
+                <button class="filters__btn--open big"><img src="../image/category/filters.svg" alt="Filters Icon">
+                    Открыть
+                    дополнительные фильтры
+                </button>
+
+                <button class="filters__btn--open small"><img src="../image/category/filters.svg" alt="Filters Icon">
+                    Ещё фильтры
+                </button>
+            </div>
+
+            <div class="filters-active__module">
+                <span class="filters-active__title">Активные фильтры:</span>
+                <span class="filters--switched">Adidas <img src="../image/category/cross_black.svg"
+                        alt="Black Cross"></span>
+                <span class="filters--switched">от 500 руб. <img src="../image/category/cross_black.svg"
+                        alt="Black Cross"></span>
+                <span class="filters--switched">до 70000 руб. <img src="../image/category/cross_black.svg"
+                        alt="Black Cross"></span>
+                <span class="filters--switched">Рюкзак <img src="../image/category/cross_black.svg"
+                        alt="Black Cross"></span>
+                <span class="filters--switched">Красный <img src="../image/category/cross_black.svg"
+                        alt="Black Cross"></span>
+                <span class="filters--switched">Adidas <img src="../image/category/cross_black.svg"
+                        alt="Black Cross"></span>
+                <span class="filters--switched">от 500 руб. <img src="../image/category/cross_black.svg"
+                        alt="Black Cross"></span>
+                <span class="filters--switched">до 70000 руб. <img src="../image/category/cross_black.svg"
+                        alt="Black Cross"></span>
+                <span class="filters--switched">Рюкзак <img src="../image/category/cross_black.svg"
+                        alt="Black Cross"></span>
+                <span class="filters--switched">Красный <img src="../image/category/cross_black.svg"
+                        alt="Black Cross"></span>
+                <button class="filters__btn--clear">Очистить все фильтры <img src="../image/category/cross_white.svg"
+                        alt="White Cross"></button>
+            </div>
+        </div>
+        <!-- /FILTERS -->
     </div>
 </section>
 
 <section class="category-top-pagination">
     <div class="category-top-pagination__container">
-        <div class="category__quantity">
-            <span class="category__quantity-legend">Показать вариантов:</span>
-            <div class="category__quantity-content">
-                <div class="category__dropdown-arrows">
-                    <img src="../image/category/drop_down_arrow.svg" alt="" class="category__dropdown-arrow" />
-                    <img src="../image/category/drop_up_arrow.svg" alt="" class="category__dropup-arrow" />
+
+        <div class="quantity drop-list">
+            <span class="drop-list-legend">Показать вариантов:</span>
+            <div class="drop-list-content">
+                <div class="drop-list__dropdown-arrows">
+                    <img src="../image/category/drop_down_arrow.svg" alt="" class="drop-list__dropdown-arrow" />
+                    <img src="../image/category/drop_up_arrow.svg" alt="" class="drop-list__dropup-arrow" />
                 </div>
                 <a href="#">28</a>
                 <a href="#">40</a>
@@ -35,12 +77,12 @@
 
         @@include('html_parts/category_pagination.html')
 
-        <div class="category__sorting">
-            <span class="category__sorting-legend">Сортировка:</span>
-            <div class="category__sorting-content">
-                <div class="category__dropdown-arrows">
-                    <img src="../image/category/drop_down_arrow.svg" alt="" class="category__dropdown-arrow" />
-                    <img src="../image/category/drop_up_arrow.svg" alt="" class="category__dropup-arrow" />
+        <div class="sorting drop-list">
+            <span class="drop-list-legend">Сортировка:</span>
+            <div class="drop-list-content">
+                <div class="drop-list__dropdown-arrows">
+                    <img src="../image/category/drop_down_arrow.svg" alt="" class="drop-list__dropdown-arrow" />
+                    <img src="../image/category/drop_up_arrow.svg" alt="" class="drop-list__dropup-arrow" />
                 </div>
                 <a href="#">По умолчанию</a>
                 <a href="#">Цена (возрастание)</a>

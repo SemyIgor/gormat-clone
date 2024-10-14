@@ -1,2 +1,40 @@
-$project-bg: #F2E8DE;
-$project-color: #8B4513;
+/* $project-bg: #F2E8DE;
+$project-color: #8B4513; */
+
+:root {
+    --color-gray-bg: #B6B8BC;
+    --color-gray-menu: #CFD1D5;
+    --color-gray-text: #929292;
+    --color-gray-header-bg: #E6E6E7;
+
+    --color-black-text: #1E1D21;
+    --color-black-header-bg: #1E1D21;
+    --color-black-footer: #1E1D21;
+    --color-black-btn-border: #28272B;
+    --color-black: #2A2A2A;
+    --color-black-header-border: #333333;
+    --color-black-header-top: #28272B;
+
+    --color-red: #E31235;
+
+    --color-green: #45AC34;
+
+    --color-white: #fff;
+
+    --margin-60: 60px;
+    --margin-40: 40px;
+    --margin-50-20: 50px;
+
+    --border-radius-6: 6px;
+
+    /* Responsive */
+    @media (max-width: 1199px) {
+        :root {
+            --margin-60: calc(30px + (60 - 30) * ((100vw - 320px) / (1199 - 320)));
+            --margin-50-20: calc(20px + (50 - 20) * ((100vw - 320px) / (1199 - 320)))
+        }
+    }
+
+
+
+}
