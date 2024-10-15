@@ -581,6 +581,7 @@
 
     .authorization {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .authorization--submit {
@@ -618,28 +619,16 @@
         }
     }
 
-    .order__title,
-    .order-review {
+    /* .order-review, */
+    /*     .order__title {
         border-radius: 0 0 0 0;
-    }
+    } */
 
+    /*     .delivery,
+    .payment,
+    .authorization,
+    .registration, */
     .goods>.order__title {
-        border-radius: 0;
-    }
-
-    .delivery {
-        border-radius: 0;
-    }
-
-    .payment {
-        border-radius: 0;
-    }
-
-    .authorization {
-        border-radius: 0;
-    }
-
-    .registration {
         border-radius: 0;
     }
 
