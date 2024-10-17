@@ -13,15 +13,17 @@ document
                         display: {
                             left: [],
                             middle: [],
-                            right: ["close"],
+                            right: [],
                         },
                     },
                     Carousel: {
                         Friction: 0.8,
                     },
+                    autoFocus: false,
                     on: {
                         done: (fancybox, slide) => {
                             console.log(`Всплывающее окно открыто!`);
+                            document.activeElement.blur();
                         },
                     },
                 },

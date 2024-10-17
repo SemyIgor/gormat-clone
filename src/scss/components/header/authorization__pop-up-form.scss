@@ -1,0 +1,24 @@
+.authorization__pop-up-form {
+    padding: 0px;
+    width: 370px;
+    border-radius: var(--border-radius-6);
+}
+
+.authorization__form.pop-up {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.order__title.registration__title.pop-up {
+    border-radius: var(--border-radius-6);
+}
+
+.carousel__button.is-close {
+    display: none !important;
+}
+
+@media(max-width: 420px) {
+    .authorization__pop-up-form {
+        width: calc(320px + (370 - 320) * ((100vw - 360px) / (420 - 360)));
+    }
+}
