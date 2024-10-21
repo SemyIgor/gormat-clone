@@ -9,16 +9,106 @@
     padding-top: 0;
 }
 
+.authorization__title.pop-up {
+    margin-bottom: 0;
+}
+
+.authorization__form .requisites-item {
+    margin-top: 20px;
+}
+
+.registration__pop-up-form {
+    border-radius: var(--border-radius-6);
+    top: 150px;
+}
+
 .order__title.registration__title.pop-up {
     border-radius: var(--border-radius-6);
+    margin-bottom: 20px;
+}
+
+.requisites-item input {
+    position: relative;
+
+    &::placeholder {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: -3px;
+    }
+}
+
+.registration__nds-checkbox.pop-up {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.registration__address-checkbox label {
+    font-size: 16px;
+}
+
+span.filter__custom-radio.pop-up {
+    margin-left: 0;
 }
 
 .carousel__button.is-close {
     display: none !important;
 }
 
+.fancybox__slide {
+    padding: 0;
+}
+
+@media(max-width: 1199px) {
+    .registration__requisites.pop-up {
+        margin-bottom: calc(50px + (30 - 50) * ((100vw - 320px) / (1199 - 320)));
+    }
+
+    .registration__requisites.pop-up.company {
+        margin-bottom: 20px;
+    }
+
+    .registration__address.pop-up {
+        margin-bottom: 30px;
+    }
+
+    .registration__nds-checkbox.pop-up {
+        margin-bottom: calc(50px + (30 - 50) * ((100vw - 320px) / (1199 - 320)));
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media(max-width: 420px) {
     .authorization__pop-up-form {
         width: calc(320px + (370 - 320) * ((100vw - 360px) / (420 - 360)));
+        /*         width: calc(320px + (370 - 320) * ((100vw - 320px) / (420 - 320))); */
+        width: 100%;
+        border-radius: 0;
+        opacity: initial;
+    }
+
+    .authorization__form.pop-up {
+        padding-bottom: 40px;
+    }
+
+    .authorization__title.pop-up {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .registration__address.pop-up {
+        margin-bottom: calc(50px + (30 - 50) * ((100vw - 320px) / (1199 - 320)));
+    }
+
+    .registration__address.pop-up.legal {
+        margin-bottom: 30px;
+    }
+
+    .requisites-item input::placeholder {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (420 - 320)));
     }
 }

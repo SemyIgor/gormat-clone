@@ -1,0 +1,31 @@
+.registration__pop-up-form {
+    /*     position: absolute;
+    top: 160px; */
+    padding: 0;
+    width: 767px;
+}
+
+.registration__title.pop-up {
+    margin-bottom: 20px;
+}
+
+.registration__tabs.pop-up {
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.registration__tab.pop-up span {
+    margin-left: 0;
+}
+
+.registration__requisites.pop-up {
+    margin-top: 0;
+}
+
+@media(max-width: 767px) {
+    .registration__pop-up-form {
+        width: 100%;
+    }
+}

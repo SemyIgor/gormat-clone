@@ -11,9 +11,9 @@ $project-color: #8B4513; */
     --color-black-header-bg: #1E1D21;
     --color-black-footer: #1E1D21;
     --color-black-btn-border: #28272B;
+    --color-black-header-top: #28272B;
     --color-black: #2A2A2A;
     --color-black-header-border: #333333;
-    --color-black-header-top: #28272B;
 
     --color-red: #E31235;
 
@@ -27,6 +27,7 @@ $project-color: #8B4513; */
 
     --border-radius-6: 6px;
 
+    --font-size-16-14: 16px;
     --font-size-16-12: 16px;
     --font-size-16-11: 16px;
     --font-size-16-10: 16px;
@@ -40,6 +41,7 @@ $project-color: #8B4513; */
             --margin-60: calc(30px + (60 - 30) * ((100vw - 320px) / (1199 - 320)));
             --margin-50-20: calc(20px + (50 - 20) * ((100vw - 320px) / (1199 - 320)));
 
+            --font-size-16-14: calc(14px + (16 - 14) * ((100vw - 320px) / (1199 - 320)));
             --font-size-16-12: calc(12px + (16 - 12) * ((100vw - 320px) / (1199 - 320)));
             --font-size-16-11: calc(11px + (16 - 11) * ((100vw - 320px) / (1199 - 320)));
             --font-size-16-10: calc(10px + (16 - 10) * ((100vw - 320px) / (1199 - 320)));

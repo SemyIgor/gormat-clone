@@ -45,7 +45,7 @@
 .cart {}
 
 .goods {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 
     &__container {
         display: flex;
@@ -264,6 +264,7 @@
         font-size: 16px;
         font-weight: 400;
         color: var(--color-gray-text);
+
     }
 
     &__result {
@@ -329,7 +330,7 @@
 }
 
 .authentication {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 
     &__container {
         display: flex;
@@ -474,7 +475,8 @@
             padding: 16px 20px 15px;
             border: 1px solid var(--color-gray-header-bg);
             border-radius: var(--border-radius-6);
-            font-size: 16px;
+            /* font-size: 16px; */
+            font-size: var(--font-size-16-14);
             font-weight: 400;
             line-height: 100%;
             /*             width: 355px;
@@ -483,7 +485,7 @@
             &::placeholder {
                 font-size: 16px;
                 font-weight: 400;
-                color: --color-gray-text;
+                color: var(--color-gray-text);
             }
         }
     }
@@ -493,15 +495,15 @@
     width: 31.6%;
     border-radius: var(--border-radius-6);
     border: 2px solid var(--color-gray-header-bg);
+    flex-shrink: 0;
 
     & form {
         padding: 0 20px 30px;
-
     }
 
-    & label {
+    /*     & label {
         margin-top: 20px;
-    }
+    } */
 }
 
 .authorization .registration__title {
@@ -531,8 +533,6 @@
         }
     }
 
-
-
     .cart .goods-item__info .category {
         font-size: calc(11px + (16 - 11) * ((100vw - 320px) / (1199 - 320)));
     }
@@ -558,8 +558,53 @@
     .order-calculation span {
         font-size: calc(16px + (20 - 16) * ((100vw - 768px) / (1199 - 768)));
     }
+
+    .authentication {
+        margin-bottom: calc(50px + (100 - 50) * ((100vw - 320px) / (1199 - 320)));
+    }
+
+    .requisites-item input::placeholder {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1199 - 320)));
+    }
+
+    .company .registration__nds-checkbox {
+        margin-bottom: calc(50px + (30 - 50) * ((100vw - 320px) / (1199 - 320)));
+    }
+
+    .company,
+    .person {
+        .registration__address {
+            margin-top: calc(20px + (12 - 20) * ((100vw - 320px) / (1199 - 320)));
+            margin-bottom: calc(40px + (30 - 40) * ((100vw - 320px) / (1199 - 320)));
+
+            &.legal {
+                margin-bottom: calc(40px + (30 - 40) * ((100vw - 320px) / (1199 - 320)));
+            }
+        }
+    }
 }
 
+@media(max-width: 1040px) {
+
+    /* ------------- @media 767 --------------------------- */
+    .authentication {
+        &__container {
+            justify-content: center;
+            gap: 30px;
+        }
+    }
+
+    .authorization {
+        width: 328px;
+    }
+
+    .registration {
+        max-width: 527px;
+
+    }
+}
+
+/* ------------- @media 767 --------------------------- */
 @media(max-width: 767px) {
     .goods__container {
         flex-direction: column-reverse;
@@ -576,7 +621,7 @@
     }
 
     .goods {
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
 
     .goods-items {
@@ -613,7 +658,7 @@
     }
 
     .payment {
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     .order__title-text {
@@ -624,9 +669,9 @@
         font-size: 20px;
     }
 
-    .authentication {
+    /*     .authentication {
         margin-bottom: 0;
-    }
+    } */
 
     .authentication__container {
         flex-direction: column-reverse;
@@ -643,8 +688,23 @@
 
     .registration {
         width: 100%;
+        max-width: initial;
     }
 }
+
+/* ------------- @media 637 --------------------------- */
+@media(max-width: 637px) {
+
+    .registration__requisites,
+    .registration__address {
+        grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+    }
+}
+
+
+/* ------------- / @media 637 --------------------------- */
+
+/* ------------- / @media 767 --------------------------- */
 
 @media(max-width: 575px) {
     .page-header {
