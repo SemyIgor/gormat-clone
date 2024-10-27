@@ -8,6 +8,8 @@
 @@include('html_parts/universals/bachdrop_wall.html')
 <!-- /mobile -->
 
+
+
 <section class="product-card">
    <div class="product-card__container">
 
@@ -221,35 +223,10 @@
                         alt="Plus"></button>
                </div>
 
-               <button id="add-to-cart__btn" class="red-btn__white-cart">
+               <button id="add-to-cart__btn" class="open-pop-up--btn red-btn__white-cart" data-src="#add-to-cart">
                   <img src="../image/card_product/cart_white.svg" alt="Cart White">
                   <span>&nbsp;В корзину</span>
                </button>
-
-               <div id="add-to-cart" class="add-to-cart pop-up" style="display: none;">
-
-                  <div class="add-to-cart__title">
-                     <img src="../image/card_product/check_mark.svg" alt="Check Mark">
-                     <span>Товар добавлен в корзину</span>
-                  </div>
-
-                  @@include('html_parts/universals/_cart_goods.html')
-
-                  <div class="add-to-cart__result-price">
-                     <span>Итого:</span>
-                     <span>65 235.00 руб.</span>
-                  </div>
-
-                  <div class="product-buttons pop-up">
-
-                     <button id="add-to-cart__btn" class="red-btn__white-cart">
-                        <span>Перейти к оформлению</span>
-                     </button>
-
-                     <a href="#" class="white-btn">Продолжить покупки</a>
-                  </div>
-
-               </div>
 
                <a href="#" class="white-btn">Купить сейчас!</a>
 
@@ -921,6 +898,36 @@
    </div>
 </div>
 <!-- products swiper -->
+
+<!-- === pop-up ========== -->
+<div style="display: none;">
+   <div id="add-to-cart" class="add-to-cart pop-up">
+
+      <div class="add-to-cart__title">
+         <img src="../image/card_product/check_mark.svg" alt="Check Mark">
+         <span>Товар добавлен в корзину</span>
+      </div>
+
+      @@include('html_parts/universals/_cart_goods.html')
+
+      <div class="add-to-cart__result-price">
+         <span>Итого:</span>
+         <span>65 235.00 руб.</span>
+      </div>
+
+      <div class="product-buttons pop-up">
+
+         <button id="add-to-cart__btn" class="red-btn__white-cart">
+            <span>Перейти к оформлению</span>
+         </button>
+
+         <a href="#" class="white-btn">Продолжить покупки</a>
+      </div>
+
+   </div>
+
+</div>
+<!-- /--- pop-up -------------- -->
 
 @@include('html_parts/universals/footer.html')
 

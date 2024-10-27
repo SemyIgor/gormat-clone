@@ -21,19 +21,48 @@
 
             <button class="red-btn__white-cart">
                 <img src="../image/card_product/cart_white.svg" alt="Cart White">
-                <span>&nbsp;Добавить всё в корзину</span>
+                <span>Добавить всё в корзину</span>
             </button>
         </div>
 
         <div class="order__title">
             <h3 class="order__title-text">Товары: <span>3</span> шт.</h3>
-            <img src="../image/cart/drop_up_arrow.svg" alt="Drop-Up Arrow" class="order__title-image">
         </div>
 
         @@include('html_parts/universals/_cart_goods+price+btn.html')
 
     </div>
 </section>
+
+<!-- === pop-up ========== -->
+<div style="display: none;">
+    <div id="add-to-cart" class="add-to-cart pop-up">
+
+        <div class="add-to-cart__title">
+            <img src="../image/card_product/check_mark.svg" alt="Check Mark">
+            <span>Товар добавлен в корзину</span>
+        </div>
+
+        @@include('html_parts/universals/_cart_goods.html')
+
+        <div class="add-to-cart__result-price">
+            <span>Итого:</span>
+            <span>65 235.00 руб.</span>
+        </div>
+
+        <div class="product-buttons pop-up">
+
+            <button id="add-to-cart__btn" class="red-btn__white-cart">
+                <span>Перейти к оформлению</span>
+            </button>
+
+            <a href="#" class="white-btn">Продолжить покупки</a>
+        </div>
+
+    </div>
+
+</div>
+<!-- /--- pop-up -------------- -->
 
 
 @@include('html_parts/universals/footer.html')
