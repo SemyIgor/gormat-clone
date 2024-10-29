@@ -1,0 +1,28 @@
+<!-- Если вставлять этот модуль через gulp-include, то Fancybox его не находит. Возможно, сам Fancybox надо размещать в конце документа -->
+<div style="display: none;">
+    <div id="add-to-cart" class="add-to-cart pop-up">
+
+        <div class="add-to-cart__title">
+            <img src="../image/card_product/check_mark.svg" alt="Check Mark">
+            <span>Товар добавлен в корзину</span>
+        </div>
+
+        @@include('html_parts/universals/_cart_goods.html')
+
+        <div class="add-to-cart__result-price">
+            <span>Итого:</span>
+            <span>65 235.00 руб.</span>
+        </div>
+
+        <div class="product-buttons pop-up">
+
+            <button id="add-to-cart__btn" class="red-btn__white-cart">
+                <span>Перейти к оформлению</span>
+            </button>
+
+            <a href="#" class="white-btn">Продолжить покупки</a>
+        </div>
+
+    </div>
+
+</div>

@@ -6,6 +6,13 @@
    text-transform: uppercase;
 }
 
+.page-title {
+   font-size: var(--font-size-48-20);
+   font-weight: 500;
+   text-transform: uppercase;
+   color: var(--color-black-text);
+}
+
 /* responsive */
 @media (max-width: 1199px) {
    .page-header {
