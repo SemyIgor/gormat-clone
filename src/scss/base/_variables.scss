@@ -6,6 +6,7 @@ $project-color: #8B4513; */
     --color-gray-menu: #CFD1D5;
     --color-gray-text: #929292;
     --color-gray-header-bg: #E6E6E7;
+    --color-grey-form-bg: #F7F7F8;
 
     --color-black-text: #1E1D21;
     --color-black-header-bg: #1E1D21;
@@ -33,6 +34,8 @@ $project-color: #8B4513; */
     --font-size-48-20: 48px;
     --font-size-36-18: 36px;
 
+    --font-size-20-16: 20px;
+
     --font-size-16-14: 16px;
     --font-size-16-12: 16px;
     --font-size-16-11: 16px;
@@ -54,6 +57,8 @@ $project-color: #8B4513; */
 
         --font-size-48-20: calc(20px + (48 - 20) * ((100vw - 320px) / (1199 - 320)));
         --font-size-36-18: calc(18px + (36 - 18) * ((100vw - 320px) / (1199 - 320)));
+
+        --font-size-20-16: calc(16px + (20 - 16) * ((100vw - 320px) / (1199 - 320)));
 
         --font-size-16-14: calc(14px + (16 - 14) * ((100vw - 320px) / (1199 - 320)));
         --font-size-16-12: calc(12px + (16 - 12) * ((100vw - 320px) / (1199 - 320)));

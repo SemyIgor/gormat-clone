@@ -70,7 +70,8 @@
     .profile-menu-radio {
         display: inline-flex;
         align-items: center;
-        padding-left: 20px;
+        padding-left: 10px;
+        /*  */
         width: 100%;
         height: 40px;
         text-align: start;
@@ -104,22 +105,89 @@
     }
 }
 
-.profile-main {
-    margin-bottom: 40px;
-    /*     border: 2px solid var(--color-gray-header-bg);
-    border-radius: calc(var(--border-radius-6) + 2px); */
-    overflow: hidden;
-    box-sizing: border-box;
-
-    &__personal-data--module,
-    &__address--module {
-        border: 2px solid var(--color-gray-header-bg);
-        border-radius: calc(var(--border-radius-6) + 2px);
-        overflow: hidden;
-        margin-bottom: 30px;
+.profile {
+    & .display--none {
+        display: none;
     }
 
-    .registration__requisites {
+    & .display--flex {
+        display: flex;
+    }
+
+    & .profile-main {
+        margin-bottom: var(--margin-100-50);
+        /*     border: 2px solid var(--color-gray-header-bg);
+        border-radius: calc(var(--border-radius-6) + 2px); */
+        overflow: hidden;
+        box-sizing: border-box;
+
+        &__personal-data--module,
+        &__address--module {
+            border: 2px solid var(--color-gray-header-bg);
+            border-radius: calc(var(--border-radius-6) + 2px);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        /*         &__address--module.additional-address {
+            margin-bottom: 0;
+
+            & img {
+                margin-left: 30px;
+            }
+
+            & h3 {
+                display: inline-flex;
+                justify-content: space-between;
+                width: 334px;
+            }
+
+            & .legal-addr-small {
+                display: none;
+            }
+        } */
+
+
+
+        & .registration__nds-checkbox {
+            margin-bottom: 30px;
+
+            & label {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                color: var(--color-black-text);
+            }
+        }
+
+        & .registration__address-checkbox {
+            grid-column: 1 / span 2;
+
+            & label {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                color: var(--color-black-text);
+            }
+        }
+
+        & .registration__nds-checkbox,
+        & .registration__address-checkbox {
+            & .filter__custom-radio {
+                margin-left: 0;
+                margin-right: 10px;
+                margin-top: 7px;
+                flex-shrink: 0;
+            }
+
+            & label {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    & .registration__requisites {
         margin-bottom: 30px;
 
         &.no-edit {
@@ -132,28 +200,96 @@
                 background-color: white;
             }
         }
-    }
 
-    & .registration__nds-checkbox label {
-        color: var(--color-black-text);
-    }
+        &.grid-btn {
+            grid-template-columns: 1fr 1fr;
 
-    .registration__nds-checkbox {
-        margin-bottom: 30px;
-    }
+            & .registration--submit {
+                margin-top: 0;
+            }
 
-    .registration__address-checkbox {
-        grid-column: 1 / span 2;
-
-        & label {
-            color: var(--color-black-text);
+            & .white-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                width: 100%;
+                height: 50px;
+                border-radius: 4px;
+            }
         }
+    }
+
+    & input::placeholder {
+        font-size: var(--font-size-16-14);
+    }
+
+    & .default-address {
+        margin-bottom: 20px;
+
+        & .profile-menu__arrow-up-img {
+            display: none;
+        }
+
+        & .profile-menu__arrow-down-img {
+            display: none;
+        }
+    }
+
+    & .additional-address {
+        margin-bottom: 20px;
+
+        & img {
+            margin-left: 30px;
+        }
+
+        & h3 {
+            display: inline-flex;
+            justify-content: space-between;
+            width: 334px;
+        }
+
+        & .legal-addr-small {
+            display: none;
+        }
+    }
+
+    & .new-address {
+        margin-bottom: 0;
+        background-color: var(--color-grey-form-bg);
+
+        & .profile-menu__arrow-up-img {
+            display: none;
+        }
+
+        & .profile-menu__arrow-down-img {
+            display: none;
+        }
+    }
+
+    & .font-size-20-16 {
+        font-size: var(--font-size-20-16);
+    }
+
+    & .set-default-address-btn {
+        grid-column: 1 / 2;
+    }
+
+    & .edit-address-btn {
+        grid-column: 2 / 3;
+    }
+
+    & .confirm-address-btn {
+        grid-column: 2 / 3;
     }
 }
 
+
 /* ------------- @media 1199 --------------------------- */
 @media(max-width: 1199px) {
-    .profile__container {}
+    .profile {
+        &__container {}
+    }
 }
 
 @media(max-width: 950px) {
@@ -170,10 +306,71 @@
     }
 }
 
+@media(max-width: 850px) {
+    .profile {
+
+        .registration__requisites {
+            &.grid-btn {
+                grid-template-columns: 1fr;
+                /* grid-template-rows: 1fr 1fr; */
+                justify-items: end;
+            }
+
+            & .registration--submit {
+                width: 60%;
+            }
+        }
+
+        & .set-default-address-btn {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        & .edit-address-btn {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        & .confirm-address-btn {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+    }
+}
+
 /* ------------- @media 767 --------------------------- */
 @media(max-width: 767px) {
     .profile__container {
         flex-direction: column;
+    }
+
+    .profile {
+        .registration__requisites {
+            &.grid-btn {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+                justify-items: end;
+            }
+
+            & .registration--submit {
+                width: 100%;
+            }
+        }
+
+        & .set-default-address-btn {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        & .edit-address-btn {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        & .confirm-address-btn {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
     }
 
     .profile-menu {
@@ -186,6 +383,37 @@
 
         .registration__address-checkbox {
             grid-column: 1 / span 2;
+        }
+    }
+}
+
+@media(max-width: 540px) {
+    .profile {
+        .registration__requisites {
+            &.grid-btn {
+                grid-template-columns: 1fr;
+                /* grid-template-rows: 1fr 1fr; */
+                justify-items: end;
+            }
+
+            & .registration--submit {
+                width: 60%;
+            }
+        }
+
+        & .set-default-address-btn {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        & .edit-address-btn {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        & .confirm-address-btn {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
         }
     }
 }
@@ -208,4 +436,45 @@
             }
         }
     }
+
+    .profile {
+
+        .registration__requisites {
+            & .registration--submit {
+                width: 100%;
+            }
+        }
+    }
+
+    .profile {
+        & .default-address {
+
+            & .profile-menu__arrow-up-img {
+                display: block;
+            }
+        }
+
+        & .additional-address {
+
+            & .legal-addr-big {
+                display: none;
+            }
+
+            & .legal-addr-small {
+                display: inline-flex;
+            }
+
+            & h3 {
+                width: 205px;
+            }
+        }
+
+        & .new-address {
+
+            & .profile-menu__arrow-up-img {
+                display: block;
+            }
+        }
+    }
+
 }
