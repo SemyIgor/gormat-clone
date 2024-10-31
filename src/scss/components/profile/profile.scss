@@ -11,10 +11,11 @@
 .profile-menu {
     border: 2px solid var(--color-gray-header-bg);
     border-radius: calc(var(--border-radius-6) + 2px);
-    width: 32%;
+    width: 31%;
     height: fit-content;
     overflow: hidden;
     box-sizing: border-box;
+    flex-shrink: 0;
 
     &__title {
         border-radius: 0 0 var(--border-radius-6) var(--border-radius-6);
@@ -24,6 +25,31 @@
         align-items: center;
         height: 40px;
         background: var(--color-black-text);
+        cursor: pointer;
+
+        &.additional {
+            & svg {
+                cursor: pointer;
+                stroke: var(--color-white);
+
+            }
+
+            &:hover .profile-menu__arrow-down-img svg {
+                stroke: var(--color-green);
+            }
+
+            &:hover .profile-menu__arrow-up-img svg {
+                stroke: var(--color-green);
+            }
+
+            & h3 {
+                & svg {
+                    &:hover {
+                        stroke: var(--color-red);
+                    }
+                }
+            }
+        }
     }
 
     &__title.all-round {
@@ -35,6 +61,7 @@
         font-weight: 400;
         text-transform: uppercase;
         color: #fff;
+        align-items: center;
 
         &.legal-addr-small {
             display: none;
@@ -122,10 +149,15 @@
         box-sizing: border-box;
 
         &__personal-data--module,
-        &__address--module {
+        &__address--module,
+        &__payment--module {
             border: 2px solid var(--color-gray-header-bg);
             border-radius: calc(var(--border-radius-6) + 2px);
             overflow: hidden;
+        }
+
+        &__personal-data--module,
+        &__address--module {
             margin-bottom: 30px;
         }
 
@@ -267,6 +299,16 @@
         }
     }
 
+    & .edit-address-btn input,
+    & .confirm-address-btn input,
+    & .add-address-btn input {
+        cursor: pointer;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
     & .font-size-20-16 {
         font-size: var(--font-size-20-16);
     }
@@ -282,14 +324,33 @@
     & .confirm-address-btn {
         grid-column: 2 / 3;
     }
+
+    & .payment__logos {}
 }
+
+[class$='-big'] {
+    display: block
+}
+
+[class$='-small'] {
+    display: none;
+}
+
+
+
 
 
 /* ------------- @media 1199 --------------------------- */
 @media(max-width: 1199px) {
     .profile {
         &__container {}
+
+        & .payment__logos {
+            padding: 30px calc(18px + (45 - 18) * ((100vw - 320px) / (1199 - 320)));
+        }
     }
+
+
 }
 
 @media(max-width: 950px) {
@@ -342,6 +403,7 @@
 @media(max-width: 767px) {
     .profile__container {
         flex-direction: column;
+        gap: 10px;
     }
 
     .profile {
@@ -423,6 +485,14 @@
         .profile__container {
             padding: 0;
         }
+    }
+
+    [class$='-big'] {
+        display: none
+    }
+
+    [class$='-small'] {
+        display: block;
     }
 
     .profile-menu {
