@@ -336,6 +336,89 @@
     display: none;
 }
 
+.orders {
+    &.profile-menu__title h3 {
+        justify-content: start;
+        /* align-items: end; */
+        gap: 4px;
+        font-size: var(--font-size-20-16);
+        line-height: 100%;
+        width: 364px;
+
+        & span {
+            display: inline-block;
+        }
+    }
+
+    &.profile-menu__title .order-time {
+        font-size: var(--font-size-16-13);
+        line-height: 100%;
+        align-self: end;
+        margin-bottom: 4px;
+    }
+
+    &.profile-menu__title .order-dot {
+        margin: 4px;
+    }
+}
+
+.orders-info {
+    &--short {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+        /* grid-template-columns: repeat(auto-fit, minmax(135px, 142px)); */
+        grid-template-rows: 62px;
+        gap: 10px;
+        padding: 10px;
+        /* justify-content: start; */
+    }
+
+    &__item {
+        max-width: 142px;
+        height: 62px;
+        border: 1px solid var(--color-gray-header-bg);
+        border-radius: var(--border-radius-6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5px;
+
+        & .to-pay__btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:hover .warning {
+                color: var(--color-green);
+                font-weight: 500;
+                /* opacity: .7; */
+            }
+        }
+
+        & .title,
+        & .text,
+        & .warning {
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            line-height: 120%;
+        }
+
+        & .title {
+            color: var(--color-black-text);
+        }
+
+        & .text {
+            color: var(--color-gray-text);
+        }
+
+        & .warning {
+            color: var(--color-red);
+        }
+    }
+}
+
+
 
 
 
@@ -347,6 +430,12 @@
 
         & .payment__logos {
             padding: 30px calc(18px + (45 - 18) * ((100vw - 320px) / (1199 - 320)));
+        }
+    }
+
+    .orders {
+        & .profile-menu__title h3 {
+            width: calc(218px + (364 - 218) * ((100vw - 480px) / (1199 - 480)));
         }
     }
 
@@ -403,7 +492,7 @@
 @media(max-width: 767px) {
     .profile__container {
         flex-direction: column;
-        gap: 10px;
+        gap: 0px;
     }
 
     .profile {
@@ -437,7 +526,8 @@
 
     .profile-menu {
         width: 100%;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
+        margin-bottom: 30px;
     }
 
     .profile-main {
@@ -547,4 +637,77 @@
         }
     }
 
+    .orders.profile-menu__title h3 {
+        width: 218px;
+    }
+
+    .orders-info {
+        &--short {
+            padding: 10px 16px;
+        }
+    }
+}
+
+@media(max-width: 1144px) {
+    .orders-info {
+        &--short {
+            grid-template-columns: repeat(auto-fit, minmax(135px, 142px));
+        }
+    }
+}
+
+@media(max-width: 974px) {
+    .orders-info {
+        &--short {
+            grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+        }
+    }
+}
+
+@media(max-width: 935px) {
+    .orders-info {
+        &--short {
+            grid-template-columns: repeat(auto-fit, minmax(135px, 142px));
+        }
+    }
+}
+
+@media(max-width: 661px) {
+    .orders-info {
+        &--short {
+            grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+        }
+    }
+}
+
+@media(max-width: 633px) {
+    .orders-info {
+        &--short {
+            grid-template-columns: repeat(auto-fit, minmax(135px, 142px));
+        }
+    }
+}
+
+@media(max-width: 509px) {
+    .orders-info {
+        &--short {
+            grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+        }
+    }
+}
+
+@media(max-width: 488px) {
+    .orders-info {
+        &--short {
+            grid-template-columns: repeat(auto-fit, minmax(135px, 142px));
+        }
+    }
+}
+
+@media(max-width: 329px) {
+    .orders-info {
+        &--short {
+            grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+        }
+    }
 }
