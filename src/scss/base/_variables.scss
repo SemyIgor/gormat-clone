@@ -42,8 +42,11 @@ $project-color: #8B4513; */
     --font-size-16-11: 16px;
     --font-size-16-10: 16px;
 
+    --font-size-14-12: 14px;
     --font-size-14-11: 14px;
     --font-size-14-10: 14px;
+
+    --font-size-12-10: 12px;
 
 }
 
@@ -67,7 +70,10 @@ $project-color: #8B4513; */
         --font-size-16-11: calc(11px + (16 - 11) * ((100vw - 320px) / (1199 - 320)));
         --font-size-16-10: calc(10px + (16 - 10) * ((100vw - 320px) / (1199 - 320)));
 
+        --font-size-14-12: calc(12px + (14 - 12) * ((100vw - 320px) / (1199 - 320)));
         --font-size-14-11: calc(11px + (14 - 11) * ((100vw - 320px) / (1199 - 320)));
         --font-size-14-10: calc(10px + (14 - 10) * ((100vw - 320px) / (1199 - 320)));
+
+        --font-size-12-10: calc(10px + (12 - 10) * ((100vw - 320px) / (1199 - 320)));
     }
 }
