@@ -27,6 +27,12 @@
         background: var(--color-black-text);
         cursor: pointer;
 
+        /* Белая галочка на заголовке */
+        & svg {
+            cursor: pointer;
+            stroke: var(--color-white);
+        }
+
         /* Не работает, так как родительский блок обрезает блок заголовка и не даёт ему "наползти" на границы */
         /*         position: relative;
         width: calc(100% + 2px);
@@ -34,12 +40,13 @@
         z-index: 2000; */
 
 
+        /* Класс, управляющий зелёным цветом галочек при наведении
+        и красным цветом иконки корзины в заголовке */
         &.additional {
-            & svg {
+            /*             & svg {
                 cursor: pointer;
                 stroke: var(--color-white);
-
-            }
+            } */
 
             &:hover .profile-menu__arrow-down-img svg {
                 stroke: var(--color-green);
@@ -150,10 +157,12 @@
 
     & .profile-main {
         margin-bottom: var(--margin-100-50);
-        /*     border: 2px solid var(--color-gray-header-bg);
-        border-radius: calc(var(--border-radius-6) + 2px); */
         overflow: hidden;
         box-sizing: border-box;
+
+        &__payment--module {
+            margin-bottom: 83px;
+        }
 
         &__personal-data--module,
         &__address--module,
@@ -656,6 +665,16 @@
 
 }
 
+@media(max-width: 1194px) {
+    .profile {
+        & .profile-main {
+            &__payment--module {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
 @media(max-width: 1030px) {
     .orders {
         &.order__title {
@@ -1018,6 +1037,7 @@
             padding-bottom: 0px;
         }
 
+        /* Если в заказе скрыт перечень товаров, то добавляем отступ основному блоку, если не скрыт, то у него есть этот отступ */
         & .additional-address.profile-main__address--module:has(.content-block.display--none) {
             padding-bottom: 10px;
         }
